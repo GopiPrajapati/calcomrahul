@@ -48,39 +48,6 @@ const TaskDetailsScreen: FC<TaskDetailsScreenProps> = ({route}) => {
           />
         )}
       />
-
-      {/* 
-      <FlatList
-        data={task?.videos}
-        keyExtractor={item => item?.id}
-        renderItem={item => {
-          //   const {node} = item?.item ?? {};
-          return (
-            <View
-              style={{
-                marginHorizontal: wp(2),
-                marginVertical: hp(1),
-              }}>
-              <Video
-                // Can be a URL or a local file.
-                source={{uri: item.item}}
-                fullscreenAutorotate={true}
-                // Store reference
-                controls
-                // ref={videoRef}
-                // Callback when remote video is buffering
-                // onBuffer={onBuffer}
-                // Callback when video cannot be loaded
-                // onError={onError}
-                style={styles.video}
-              />
-            </View>
-          );
-        }}
-        contentContainerStyle={{
-          alignItems: 'center',
-        }}
-      /> */}
     </View>
   );
 };
